@@ -1,3 +1,4 @@
+// server.js
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __commonJS = (cb, mod) => function __require() {
   try {
@@ -6,8 +7,6 @@ var __commonJS = (cb, mod) => function __require() {
     throw mod = 0, e;
   }
 };
-
-// config/db.js
 var require_db = __commonJS({
   "config/db.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -34,8 +33,6 @@ var require_db = __commonJS({
     module2.exports = connectDB2;
   }
 });
-
-// models/User.js
 var require_User = __commonJS({
   "models/User.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -53,8 +50,6 @@ var require_User = __commonJS({
     module2.exports = mongoose.model("User", UserSchema);
   }
 });
-
-// middleware/auth.js
 var require_auth = __commonJS({
   "middleware/auth.js"(exports2, module2) {
     var jwt = require("jsonwebtoken");
@@ -84,8 +79,6 @@ var require_auth = __commonJS({
     module2.exports = { verifyToken, requireRole };
   }
 });
-
-// routes/auth.js
 var require_auth2 = __commonJS({
   "routes/auth.js"(exports2, module2) {
     var express2 = require("express");
@@ -148,8 +141,6 @@ var require_auth2 = __commonJS({
     module2.exports = router;
   }
 });
-
-// routes/users.js
 var require_users = __commonJS({
   "routes/users.js"(exports2, module2) {
     var express2 = require("express");
@@ -212,8 +203,6 @@ var require_users = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Personnel.js
 var require_Personnel = __commonJS({
   "models/Personnel.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -227,8 +216,6 @@ var require_Personnel = __commonJS({
     module2.exports = mongoose.model("Personnel", PersonnelSchema);
   }
 });
-
-// routes/personnel.js
 var require_personnel = __commonJS({
   "routes/personnel.js"(exports2, module2) {
     var express2 = require("express");
@@ -268,8 +255,6 @@ var require_personnel = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Client.js
 var require_Client = __commonJS({
   "models/Client.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -280,8 +265,6 @@ var require_Client = __commonJS({
     module2.exports = mongoose.model("Client", ClientSchema);
   }
 });
-
-// routes/clients.js
 var require_clients = __commonJS({
   "routes/clients.js"(exports2, module2) {
     var express2 = require("express");
@@ -317,8 +300,6 @@ var require_clients = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Service.js
 var require_Service = __commonJS({
   "models/Service.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -330,8 +311,6 @@ var require_Service = __commonJS({
     module2.exports = mongoose.model("Service", ServiceSchema);
   }
 });
-
-// routes/services.js
 var require_services = __commonJS({
   "routes/services.js"(exports2, module2) {
     var express2 = require("express");
@@ -362,8 +341,6 @@ var require_services = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Job.js
 var require_Job = __commonJS({
   "models/Job.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -395,8 +372,6 @@ var require_Job = __commonJS({
     module2.exports = mongoose.model("Job", JobSchema);
   }
 });
-
-// models/Notification.js
 var require_Notification = __commonJS({
   "models/Notification.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -415,8 +390,6 @@ var require_Notification = __commonJS({
     module2.exports = mongoose.model("Notification", NotificationSchema);
   }
 });
-
-// utils/notify.js
 var require_notify = __commonJS({
   "utils/notify.js"(exports2, module2) {
     var Notification = require_Notification();
@@ -461,8 +434,6 @@ var require_notify = __commonJS({
     module2.exports = { createNotificationsForJob };
   }
 });
-
-// routes/jobs.js
 var require_jobs = __commonJS({
   "routes/jobs.js"(exports2, module2) {
     var express2 = require("express");
@@ -645,8 +616,6 @@ var require_jobs = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Roster.js
 var require_Roster = __commonJS({
   "models/Roster.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -671,8 +640,6 @@ var require_Roster = __commonJS({
     module2.exports = mongoose.model("Roster", RosterSchema);
   }
 });
-
-// routes/roster.js
 var require_roster = __commonJS({
   "routes/roster.js"(exports2, module2) {
     var express2 = require("express");
@@ -731,8 +698,6 @@ var require_roster = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/Target.js
 var require_Target = __commonJS({
   "models/Target.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -746,8 +711,6 @@ var require_Target = __commonJS({
     module2.exports = mongoose.model("Target", TargetSchema);
   }
 });
-
-// utils/stats.js
 var require_stats = __commonJS({
   "utils/stats.js"(exports2, module2) {
     function startOfDay(d) {
@@ -879,8 +842,6 @@ var require_stats = __commonJS({
     };
   }
 });
-
-// routes/targets.js
 var require_targets = __commonJS({
   "routes/targets.js"(exports2, module2) {
     var express2 = require("express");
@@ -941,8 +902,6 @@ var require_targets = __commonJS({
     module2.exports = router;
   }
 });
-
-// models/SalaryGrade.js
 var require_SalaryGrade = __commonJS({
   "models/SalaryGrade.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -954,8 +913,6 @@ var require_SalaryGrade = __commonJS({
     module2.exports = mongoose.model("SalaryGrade", SalaryGradeSchema);
   }
 });
-
-// models/SalaryAssignment.js
 var require_SalaryAssignment = __commonJS({
   "models/SalaryAssignment.js"(exports2, module2) {
     var mongoose = require("mongoose");
@@ -966,8 +923,6 @@ var require_SalaryAssignment = __commonJS({
     module2.exports = mongoose.model("SalaryAssignment", SalaryAssignmentSchema);
   }
 });
-
-// routes/salary.js
 var require_salary = __commonJS({
   "routes/salary.js"(exports2, module2) {
     var express2 = require("express");
@@ -1014,8 +969,6 @@ var require_salary = __commonJS({
     module2.exports = router;
   }
 });
-
-// routes/dashboard.js
 var require_dashboard = __commonJS({
   "routes/dashboard.js"(exports2, module2) {
     var express2 = require("express");
@@ -1186,8 +1139,6 @@ var require_dashboard = __commonJS({
     module2.exports = router;
   }
 });
-
-// routes/notifications.js
 var require_notifications = __commonJS({
   "routes/notifications.js"(exports2, module2) {
     var express2 = require("express");
@@ -1249,8 +1200,6 @@ var require_notifications = __commonJS({
     module2.exports = router;
   }
 });
-
-// server.js
 require("dotenv").config();
 var path = require("path");
 var express = require("express");
@@ -1273,6 +1222,7 @@ app.use("/api/dashboard", require_dashboard());
 app.use("/api/notifications", require_notifications());
 var webDistPath = path.join(__dirname, "../web/dist");
 app.use(express.static(webDistPath));
+app.get("/", (req, res) => res.json({ ok: true, message: "CI360 Productivity Suite Backend API is running" }));
 app.get("/api/health", (req, res) => res.json({ ok: true, time: /* @__PURE__ */ new Date() }));
 var PORT = process.env.PORT || 4e3;
 app.listen(PORT, () => console.log(`CI360 backend server running on http://localhost:${PORT}`));
